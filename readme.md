@@ -1,6 +1,6 @@
 # action-auto-changelog
 
-> Generate changelog automatically.
+> Generate a changelog automatically for your npm packages with GitHub actions.
 
 <br>
 
