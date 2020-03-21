@@ -30,9 +30,17 @@ git config --global user.name "Ahmad Awais"
 
 REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
 
+echo "❯ Clone:";
 git clone "${REMOTE_REPO}" .
+
+echo "❯ Generate changelog:";
 npx auto-changelog
+
+echo "❯ Git commit:";
 git add .
 git commit -m " 📖 DOC: Changelog"
 
+echo "❯ Git push:";
 git push "${REMOTE_REPO}" HEAD:${INPUT_BRANCH} --follow-tags $_FORCE_OPTION $_TAGS;
+
+echo "❯❯ All done!";
