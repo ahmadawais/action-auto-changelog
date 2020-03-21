@@ -32,6 +32,7 @@ REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITO
 
 echo "❯ Clone:";
 git clone "${REMOTE_REPO}" .
+git checkout "${INPUT_BRANCH}"
 
 echo "❯ Generate changelog:";
 npx auto-changelog
