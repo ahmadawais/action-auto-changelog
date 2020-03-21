@@ -1,0 +1,10 @@
+# action.yml
+name: 'Action Auto Changelog'
+description: 'Create a changelog automatically'
+author: 'AhmadAwais'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+branding:
+    icon: 'shuffle'
+    color: 'green'
