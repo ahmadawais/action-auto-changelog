@@ -13,7 +13,7 @@ git config --global user.email "me@ahmadawais.com"
 git config --global user.name "Ahmad Awais"
 
 echo "❯ Generate changelog:";
-npx auto-changelog
+npx auto-changelog --package --unreleased --output 'changelog.md' --commit-limit 'false'
 
 echo "❯ Git commit:";
 git add .
