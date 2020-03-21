@@ -9,6 +9,9 @@ INPUT_DIRECTORY=${INPUT_DIRECTORY:-'.'}
 _FORCE_OPTION=''
 REPOSITORY=${INPUT_REPOSITORY:-$GITHUB_REPOSITORY}
 
+git config --global user.email "actions@github.com"
+git config --global user.name "GitHub Actions"
+
 npx auto-changelog
 git add .
 git commit -m " 📖 DOC: Changelog"
