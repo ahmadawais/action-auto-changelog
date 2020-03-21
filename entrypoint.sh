@@ -30,8 +30,6 @@ git config --global user.name "Ahmad Awais"
 
 REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
 
-echo "❯ Clone:";
-git clone "${REMOTE_REPO}" .
 git checkout "${INPUT_BRANCH}"
 
 echo "❯ Generate changelog:";
