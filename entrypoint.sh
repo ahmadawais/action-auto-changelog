@@ -33,7 +33,7 @@ REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITO
 git checkout "${INPUT_BRANCH}"
 
 echo "❯ Generate changelog:";
-npx auto-changelog
+npx auto-changelog --unreleased
 
 echo "❯ Git commit:";
 git add .
